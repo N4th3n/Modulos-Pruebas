@@ -1,6 +1,13 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
+
+
+class prueba(models.Model):
+    _name = 'pr.prueba'
+
+    name = fields.Char("posicion")
+    status = fields.Selection(selection=[("primero", "uno"), ("segundo", "dos")])
 
 
 # class prueba(models.Model):
@@ -16,3 +23,4 @@
 #     def _value_pc(self):
 #         for record in self:
 #             record.value2 = float(record.value) / 100
+

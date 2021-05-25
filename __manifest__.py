@@ -22,9 +22,14 @@
     # any module necessary for this one to work correctly
     'depends': ['base'],
 
-    # always loaded
+    # Convertir modulo en aplicacion
+    'application' : True,
+
+    # CADA VISTA CREADA DEBE IR AQUI EN DATA O NO APARECERÁ
+    # LA OPCION DE SEGURIDAD VIENE COMENTADA POR DEFECTO, DEBE SER DESCOMENTADA PARA PODER INGRESAR AL MODULO
+    # LEER, CREAR, EDITAR Y ELIMINAR CORRESPONDEN AL 1,1,1,1 EN CASO DE RESTRINGIR UN PERMISO DEBE SER 0
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],
